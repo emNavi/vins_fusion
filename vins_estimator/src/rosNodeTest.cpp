@@ -28,6 +28,7 @@ queue<sensor_msgs::PointCloudConstPtr> feature_buf;
 queue<sensor_msgs::ImageConstPtr> img0_buf;
 queue<sensor_msgs::ImageConstPtr> img1_buf;
 std::mutex m_buf;
+// Realsense 系列相机必须在开始读取后才开始调整曝光，会影响前后特征点识别，因此扔掉刚开始的 THROW_OUT_MAX_VALUE 张 图片
 #define  THROW_OUT_MAX_VALUE 60
 static int throw_out_num = 0;
 
