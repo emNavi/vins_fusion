@@ -14,5 +14,5 @@ else
     echo "Vins-Fusion output dir is already exit."
 fi
 
-gnome-terminal -- bash -c "source ${PROJECT_DIR}/devel/setup.bash;roslaunch vins swarm_d430_no_rviz.launch"  && sleep 1;
+source ${PROJECT_DIR}/devel/setup.bash;roslaunch vins swarm_d430_no_rviz.launch  && sleep 1;
 
