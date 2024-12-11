@@ -7,7 +7,7 @@ echo "[START] Vins-Fusion "
 # 通过本脚本文件路径来获取 x152b 项目文件根目录
 PROJECT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )/../.." && pwd )"
 
-VINS_OUTPUT_DIR="${PROJECT_DIR}/src/autonomous_drone_sdk/global_interface/config/vins_fusion/output"
+VINS_OUTPUT_DIR="${PROJECT_DIR}/src/emnavi_sdk/global_interface/config/vins_fusion/output"
 if [ ! -d "${VINS_OUTPUT_DIR}" ]; then
     mkdir ${VINS_OUTPUT_DIR}
 else
